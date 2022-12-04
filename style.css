@@ -6,3 +6,12 @@
 .pic{
 	margin-left: 48%;
 }
+
+.header{
+	padding-left: 30px;
+	padding-right: 50px;
+	/*background-color: lightgray;*/
+	font-family: "Impact";
+	font-size: 350%;
+	margin-top: 40px;
+}
