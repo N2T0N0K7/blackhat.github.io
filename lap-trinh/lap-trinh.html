@@ -12,113 +12,7 @@
 </head>
 
 <style>
-    @charset "utf-8";
-
-    .header{
-        padding-left: 15px;
-        font-family: "Impact";
-        font-size: 350%;
-        margin-top: 40px;
-    }
-
-    /*Top Navigation*/
-    .topnav {
-        list-style-type: none;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
-
-    .topnav-locate {
-        float: left;
-    }
-
-    .topnav-style {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 16px 20px;
-        text-decoration: none;
-    }
-
-    .topnav-style:hover {
-        background-color: red;
-    }
-
-    /*topnav-Dropdoưn*/
-    .dropdown {
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-
-    .drop-list {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-
-    .drop-list:hover {
-        background-color: #f1f1f1;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-        position: absolute;
-    }
-
-    .sidebar {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 18.5%;
-        background-color: #f1f1f1;
-        overflow: auto;
-        float: left;
-        margin-top: 10px;
-        }
-
-    .class1 .class2 {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-    }
-
-    .active {
-        background-color: #333;
-        color: white;
-        display: block;
-        padding: 8px 16px;
-        text-decoration: none;
-    }
-
-    .class1 a:hover:not(.active) {
-        background-color: #cacaca;
-        color: white;
-    }
-
-    .content {
-        float: right;
-        width: 80.5%;
-        height: 100%;
-        margin-top: 20px;
-    }
-
-    .title {
-        font-size: 4vw;
-    }
-
+    
 </style>
 
 <body>
@@ -126,12 +20,11 @@
         <b>SpeedKenode</b>
     </div>
 
-    <!--top navigation-->
     <ul class="topnav">
         <li class="topnav-locate"><a class="topnav-style" href="../index.html">Home</a></li>
-        <li class="topnav-locate"><a class="topnav-style" href="">Link</a></li>
-        <li class="topnav-locate"><a class="topnav-style" href="">Link</a></li>
-        <li class="topnav-locate"><a class="topnav-style" href="">Link</a></li>
+        <li class="topnav-locate"><a class="topnav-style" href="#1">Link</a></li>
+        <li class="topnav-locate"><a class="topnav-style" href="#1">Link</a></li>
+        <li class="topnav-locate"><a class="topnav-style" href="#1">Link</a></li>
         <li class="topnav-locate, dropdown">
             <a class="topnav-style" href="">Droptest</a>
             <div class="dropdown-content">
@@ -142,16 +35,38 @@
         </li>
     </ul>
 
-    <ul class="sidebar">
-        <li class="class1"><a class="active" href="#home">Home</a></li>
-        <li class="class1"><a class="class2" href="#news">News</a></li>
-        <li class="class1"><a class="class2" href="#contact">Contact</a></li>
-        <li class="class1"><a class="class2" href="#about">About</a></li>
-    </ul>
+    <div class="row">
+        <div class="leftcolumn">
+            <a class="button" href="./python/python-introduction.html">Python</a>
+            <a class="button" href="./python/python-introduction.html">Python</a>
+            <a class="button" href="./python/python-introduction.html">Python</a>
+            <a class="button" href="./python/python-introduction.html">Python</a>
+            <a class="button" href="./python/python-introduction.html">Python</a>
+            <a class="button" href="./python/python-introduction.html">Python</a>
+        </div>
 
-    <div class="content">
-        <h1 class="title">Title</h1>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg"><p>Image</p></div>
+                <div class="fakeimg"><p>Image</p></div>
+                <div class="fakeimg"><p>Image</p></div>
+            </div>
+
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
     </div>
 </body>
-</html>
