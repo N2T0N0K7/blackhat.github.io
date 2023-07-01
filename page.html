@@ -6,13 +6,14 @@
 	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./script.js"></script>
 	<title>Document</title>
 </head>
 <body>
 	<div id="header">SpeedKenode</div>
 	
 	<div class="topnav" id="myTopnav">
-	  	<a href="./index.html">Home</a>
+	  	<a href="./">Home</a>
 	  	<a href="">News</a>
 	  	<a href="#contact">Contact</a>
 	  	<div class="dropdown">
@@ -32,5 +33,82 @@
 		    </form>
   		</div>
 	</div>
+	
+	<div style="display: table; ">
+		<div id="sidebar">
+			<input type="text" id="mySearch" onkeyup="searchMenu()" placeholder="Search.." title="Type in a category">
+			<a href="" class="active">Home</a>
+			<a href="">News</a>
+			<a href="">Contact</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+			<a href="">About</a>
+		</div>
+
+		<div id = "myDiv" style="float: left; width: 80%;">
+		  <h2>Fixed Full-height Side Nav</h2>
+		  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+		  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width.If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+		  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		  <p>Some text..</p>
+		</div>
+	</div>
+
+	<div id="footer"><h2>Created by SpeedKenode.</h2></div>
+
+	<script type="text/javascript">
+		const clientHeight = document.getElementById('myDiv').clientHeight;
+		console.log('client Height : ', clientHeight);
+		let data =  clientHeight.toString() + "px";
+		const box = document.getElementById('sidebar');
+		box.style.height = data;
+	</script>
 </body>
 </html>

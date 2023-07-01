@@ -122,6 +122,7 @@ body {
     content: "";
     display: table;
     clear: both;
+    margin-bottom: 50px;
 }
 
 #leftcolumn {   
@@ -159,7 +160,6 @@ body {
     padding: 40px;
     text-align: center;
     background: #ddd;
-    margin-top: 50px;
 }
 
 .card2 {
@@ -280,4 +280,41 @@ body {
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}
+
+
+#sidebar {
+    list-style-type: none;
+    padding: 0;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    margin-right: 10px;
+    width: 17%;
+}
+
+#sidebar a {
+    display: block;
+    color: #000;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+#sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#sidebar a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
 }
